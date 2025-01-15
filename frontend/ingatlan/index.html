@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingatlan Hirdetések</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="design.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="java.js" defer></script>
+    
+</head>
+<body class="bg-light">
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Ingatlan Hirdetések</h1>
+    </header>
+    <main class="container my-5">
+        <section id="add-ad" class="mb-5">
+            <h2 class="text-center mb-4">Új Hirdetés Felvitele</h2>
+            <form id="ad-form" class="row g-3">
+                <div class="col-md-6">
+                    <label for="title" class="form-label">Cím:</label>
+                    <input type="text" id="title" name="title" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="price" class="form-label">Ár (Ft):</label>
+                    <input type="number" id="price" name="price" class="form-control" required>
+                </div>
+                <div class="col-12">
+                    <label for="description" class="form-label">Leírás:</label>
+                    <textarea id="description" name="description" class="form-control" rows="3" required></textarea>
+                </div>
+                
+                <div class="col-12 d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary">Hirdetés Felvitele</button>
+                </div>
+            </form>
+            
+        </section>
+
+        <section id="ads">
+            <h2 class="text-center mb-4">Elérhető Hirdetések</h2>
+            <div class="row" id="ad-cards"></div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-white text-center py-3">
+        <p>&copy; 2025 Ingatlan Hirdetések</p>
+    </footer>
+</body>
+</html>

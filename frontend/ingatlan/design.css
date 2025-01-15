@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* világosszürke háttér */
+    color: #333;
+}
+
+header {
+    background-color: #333; /* sötétszürke háttér */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    padding: 2rem;
+}
+
+#add-ad {
+    margin-bottom: 2rem;
+    background-color: #fff; /* fehér háttér */
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#add-ad h2 {
+    margin-top: 0;
+    color: #555; /* szürkés szín a címnek */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+    color: #666; /* világosszürke szín a címkéknek */
+}
+
+input, textarea, button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc; /* szürke keret */
+    border-radius: 5px;
+}
+
+button {
+    background-color: #666; /* szürke gomb */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555; /* sötétebb szürke hover effekt */
+}
+
+#ads {
+    text-align: center;
+}
+
+.ad-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.ad-card {
+    background-color: #fff; /* fehér háttér a kártyáknál */
+    padding: 1rem;
+    border: 1px solid #ddd; /* világosszürke keret */
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* enyhe árnyék */
+    text-align: center;
+}
+
+.ad-card h3 {
+    margin-top: 0;
+    color: #333; /* sötétebb szürke a címeknek */
+}
+
+.ad-card button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #888; /* közepes szürke gomb */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.ad-card button:hover {
+    background-color: #666; /* sötétebb szürke hover effekt */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f1f1f1; /* világosszürke footer */
+    margin-top: 2rem;
+}
+
+.ad-card img {
+    width: 100%; 
+    height: auto; 
+    max-height: 200px; 
+    object-fit: contain; 
+    border-radius: 5px;
+    border: 1px solid #ddd; /* világosszürke keret a képeknél */
+}
+.ad-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
